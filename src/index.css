@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/font/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-Med';
+    src: url(assets/font/static/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: 'Inter-Sem';
+    src: url(assets/font/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(assets/font/static/Inter-Bold.ttf);
+}
+
+@layer utilities {
+  body{
+    @apply text-sm font-['Inter'] text-gray-700;
+  }
+  .font-medium {
+    @apply font-['Inter-Med']
+  }
+  .font-semibold {
+    @apply font-['Inter-Sem']
+  }
+  .font-bold {
+    @apply font-['Inter-Bold']
+  }
+}
